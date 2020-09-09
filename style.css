@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body {
+    background: whitesmoke ;
+    font: 16px Helvetica, Arial, Sans-Serif;
+    color: #636363;
+    line-height: 24px;
+}
+.game{
+    width: 1000px;
+    height: 400px;
+    background: burlywood;
+    border: 5px solid black;
+    margin: auto;
+  }
+  #ball{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+     background: red;
+    position:relative;
+    top: 200px;
+    left: 970px;
+    animation: bounce 1s infinite alternate;
+    animation: bounce1 1s infinite alternate;
+  }
+  #ball1{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+     background: blueviolet;
+    position:relative;
+    top: 200px;
+    left: 970px;
+    animation: bounce 1s infinite alternate;
+    
+  }
+  #ball2{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+     background: yellow;
+    position:relative;
+    top: 200px;
+    left: 970px;
+    animation: bounce2 1s infinite alternate;
+  }
+  #ball3{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+     background: hotpink;
+    position:relative;
+    top: 200px;
+    left: 970px;
+    animation: bounce3 1s infinite alternate;
+  }
+    @keyframes bounce {
+        from { transform: translate3d(0, 0, 0);}
+        to   { transform: translate3d(-500px, 150px, 0); }
+      }
+      @keyframes bounce1 {
+        from { transform: translate3d(-500px, 150px, 0);     }
+        to   { transform: translate3d(-970px, 20px, 0); }
+      }
+      @keyframes bounce2 {
+        from { transform: translate3d(-970px, 20px, 0);     }
+        to   { transform: translate3d(50px, -100px, 0); }
+      }
+      @keyframes bounce3 {
+        from { transform: translate3d(50px, -100px, 0);     }
+        to   { transform: translate3d(-1000px, -150px, 0); }
+      }
+  
+
+  
+  
